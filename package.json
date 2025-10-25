@@ -1,0 +1,17 @@
+{
+  "name": "chemistry-for-grade-9",
+  "version": "1.0.0",
+  "description": "A website to teach chemistry to grade 9 students.",
+  "homepage": "https://salamehl.github.io/test1",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
