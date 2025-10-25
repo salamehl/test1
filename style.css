@@ -22,3 +22,59 @@ section {
     padding: 1rem;
     border-radius: 5px;
 }
+
+.diagram {
+    text-align: center;
+    padding: 20px;
+}
+
+.box {
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.matter { background-color: #d4edda; }
+.pure-substance { background-color: #cce5ff; }
+.mixture { background-color: #fff3cd; }
+.element, .compound { background-color: #d1ecf1; }
+.homogeneous, .heterogeneous { background-color: #f8d7da; }
+
+.split {
+    display: flex;
+    justify-content: center;
+}
+
+.branch {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    background-color: #333;
+}
+
+.h-line-top {
+    width: 50%;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.h-line-middle {
+    width: 100%;
+    height: 2px;
+}
+
+.v-line {
+    width: 2px;
+    height: 20px;
+}
+
+.v-line-short {
+    width: 2px;
+    height: 10px;
+}
