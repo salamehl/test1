@@ -39,36 +39,57 @@ const lessonContent = {
             title: "Classification of Matter Summary",
             content: [
                 `<div class="diagram">
-                    <div class="box matter">Matter</div>
+                    <div class="box matter">
+                        <div class="box-title">Matter</div>
+                        <div class="box-description">Anything that has mass and takes up space.</div>
+                    </div>
                     <div class="line h-line-top"></div>
                     <div class="split">
                         <div class="branch">
                             <div class="line v-line"></div>
-                            <div class="box pure-substance">Pure Substance</div>
+                            <div class="box pure-substance">
+                                <div class="box-title">Pure Substance</div>
+                                <div class="box-description">Constant chemical composition and properties.</div>
+                            </div>
                             <div class="line h-line-middle"></div>
                             <div class="split">
                                 <div class="branch">
                                     <div class="line v-line-short"></div>
-                                    <div class="box element">Elements</div>
+                                    <div class="box element">
+                                        <div class="box-title">Elements</div>
+                                        <div class="box-description">Cannot be broken down.<br>(e.g., Iron, Oxygen)</div>
+                                    </div>
                                 </div>
                                 <div class="branch">
                                     <div class="line v-line-short"></div>
-                                    <div class="box compound">Compounds</div>
+                                    <div class="box compound">
+                                        <div class="box-title">Compounds</div>
+                                        <div class="box-description">Chemically bonded elements.<br>(e.g., Water H₂O)</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="branch">
                             <div class="line v-line"></div>
-                            <div class="box mixture">Mixtures</div>
+                            <div class="box mixture">
+                                <div class="box-title">Mixtures</div>
+                                <div class="box-description">Two or more substances not chemically bonded.</div>
+                            </div>
                              <div class="line h-line-middle"></div>
                             <div class="split">
                                 <div class="branch">
                                     <div class="line v-line-short"></div>
-                                    <div class="box homogeneous">Homogeneous</div>
+                                    <div class="box homogeneous">
+                                        <div class="box-title">Homogeneous</div>
+                                        <div class="box-description">Uniform composition.<br>(e.g., Saltwater)</div>
+                                    </div>
                                 </div>
                                 <div class="branch">
                                     <div class="line v-line-short"></div>
-                                    <div class="box heterogeneous">Heterogeneous</div>
+                                    <div class="box heterogeneous">
+                                        <div class="box-title">Heterogeneous</div>
+                                        <div class="box-description">Non-uniform composition.<br>(e.g., Salad)</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -210,25 +231,32 @@ const allQuestions = [
     { question: "What is the smallest unit of an element?", options: ["Atom", "Molecule", "Compound", "Mixture"], answer: "Atom", topic: "Elements" },
     { question: "Which of these is a pure substance?", options: ["Air", "Gold", "Steel", "Milk"], answer: "Gold", topic: "Elements" },
     { question: "Which of the following is a symbol for an element?", options: ["H₂O", "CO₂", "O", "NaCl"], answer: "O", topic: "Elements" },
-    { question: "Is paper an element?", options: ["Yes", "No"], answer: "No", topic: "Elements" },
     { question: "Which element is essential for respiration?", options: ["Carbon", "Oxygen", "Nitrogen", "Hydrogen"], answer: "Oxygen", topic: "Elements" },
-    { question: "What is the most abundant element in the Earth's crust?", options: ["Iron", "Silicon", "Oxygen", "Aluminum"], answer: "Oxygen", topic: "Elements" },
+    { question: "A substance that contains only one kind of atom is called a(n)...", options: ["Element", "Compound", "Mixture", "Solution"], answer: "Element", topic: "Elements" },
+    { question: "Which of these pairs represents elements only?", options: ["Iron and Oxygen", "Water and Hydrogen", "Salt and CO₂", "Sugar and Nitrogen"], answer: "Iron and Oxygen", topic: "Elements" },
+    { question: "Can elements be broken down by chemical means?", options: ["Yes, into simpler substances", "No, they are the simplest form of matter", "Only some elements can be broken down", "Yes, into atoms"], answer: "No, they are the simplest form of matter", topic: "Elements" },
 
     // Compounds
     { question: "Which of the following is a compound?", options: ["Oxygen", "Water", "Air", "Salad"], answer: "Water", topic: "Compounds" },
     { question: "What is formed when two or more elements are chemically bonded together?", options: ["Element", "Compound", "Mixture", "Solution"], answer: "Compound", topic: "Compounds" },
     { question: "What is the chemical formula for table salt?", options: ["H₂O", "CO₂", "O₂", "NaCl"], answer: "NaCl", topic: "Compounds" },
     { question: "Is it possible to separate a compound by physical means?", options: ["Yes", "No"], answer: "No", topic: "Compounds" },
-    { question: "Which compound is known as the 'universal solvent'?", options: ["Ammonia", "Vinegar", "Water", "Alcohol"], answer: "Water", topic: "Compounds" },
-    { question: "What are the elements in carbon dioxide?", options: ["Carbon and Oxygen", "Carbon and Hydrogen", "Carbon and Nitrogen", "Carbon and Chlorine"], answer: "Carbon and Oxygen", topic: "Compounds" },
+    { question: "Which statement best describes a compound?", options: ["Two or more substances mixed physically", "A pure substance made of identical atoms", "Two or more elements chemically combined in a fixed ratio", "A mixture that can be separated by filtration"], answer: "Two or more elements chemically combined in a fixed ratio", topic: "Compounds" },
+    { question: "Water (H₂O) is an example of a...", options: ["Mixture", "Element", "Compound", "Solution"], answer: "Compound", topic: "Compounds" },
+    { question: "In a compound, the elements are present in a __________ ratio.", options: ["variable", "fixed", "random", "large"], answer: "fixed", topic: "Compounds" },
+    { question: "When two elements combine chemically to form a compound, the compound has...", options: ["The same properties as the elements", "Properties different from the elements", "Both elements visible", "A variable composition"], answer: "Properties different from the elements", topic: "Compounds" },
+    { question: "The properties of a compound are...", options: ["the same as its constituent elements", "different from its constituent elements", "an average of its constituent elements", "always solid"], answer: "different from its constituent elements", topic: "Compounds" },
 
     // Mixtures
     { question: "Which of the following is a homogeneous mixture?", options: ["Sand and water", "Saltwater", "Oil and water", "A bag of mixed nuts"], answer: "Saltwater", topic: "Mixtures" },
     { question: "A salad is an example of a...", options: ["Homogeneous mixture", "Heterogeneous mixture", "Compound", "Element"], answer: "Heterogeneous mixture", topic: "Mixtures" },
-    { question: "Which of the following is a heterogeneous mixture?", options: ["Sugar water", "Air", "Vinegar", "Pizza"], answer: "Pizza", topic: "Mixtures" },
-    { question: "Can you separate a mixture by physical means?", options: ["Yes", "No"], answer: "Yes", topic: "Mixtures" },
-    { question: "Which of the following is a solution?", options: ["Milk", "Muddy water", "Orange juice with pulp", "Air"], answer: "Air", topic: "Mixtures" },
-    { question: "How can you separate salt from saltwater?", options: ["Filtration", "Evaporation", "Magnetism", "Decantation"], answer: "Evaporation", topic: "Mixtures" }
+    { question: "Which of the following is not a pure substance?", options: ["Water", "Air", "Iron", "Carbon dioxide"], answer: "Air", topic: "Mixtures" },
+    { question: "Which of the following is a mixture?", options: ["Salt (NaCl)", "Water (H₂O)", "Air", "Carbon dioxide (CO₂)"], answer: "Air", topic: "Mixtures" },
+    { question: "A sample of matter can be separated into its components by physical methods. This sample is most likely a...", options: ["Compound", "Element", "Mixture", "Pure substance"], answer: "Mixture", topic: "Mixtures" },
+    { question: "A combination of two or more substances not chemically combined is called a...", options: ["Compound", "Element", "Solution", "Mixture"], answer: "Mixture", topic: "Mixtures" },
+    { question: "The components of a mixture can be separated by __________ methods.", options: ["chemical", "physical", "nuclear", "biological"], answer: "physical", topic: "Mixtures" },
+    { question: "Which statement is true about air?", options: ["It is a compound", "It is a heterogeneous mixture", "It is a homogeneous mixture", "It is an element"], answer: "It is a homogeneous mixture", topic: "Mixtures" },
+    { question: "How can a mixture of iron filings and sulfur be separated?", options: ["By filtration", "By using a magnet", "By evaporation", "By chemical reaction"], answer: "By using a magnet", topic: "Mixtures" }
 ];
 
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);

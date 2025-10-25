@@ -34,6 +34,16 @@ section {
     margin: 10px auto;
     border-radius: 5px;
     display: inline-block;
+    min-width: 150px;
+}
+
+.box-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.box-description {
+    font-size: 0.9em;
 }
 
 .matter { background-color: #d4edda; }
