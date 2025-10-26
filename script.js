@@ -141,7 +141,6 @@ const quizQuestions = [
         topic: "Elements"
     },
     {
-      {
   question: "Salt dissolved in water is an example of a...",
   options: ["Homogeneous mixture", "Heterogeneous mixture", "Compound", "Element"],
   answer: "Homogeneous mixture",
