@@ -187,7 +187,8 @@ const quizQuestions = [
   options: ["Homogeneous mixture", "Heterogeneous mixture", "Compound", "Element"],
   answer: "Homogeneous mixture",
   topic: "Mixtures"
-}
+},
+    {
   question: "A salad is an example of a...",
         options: ["Homogeneous mixture", "Heterogeneous mixture", "Compound", "Element"],
         answer: "Heterogeneous mixture",
