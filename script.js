@@ -12,27 +12,16 @@ const lessonContent = {
         {
             title: "Matter Classifications",
             content: [
-                "Matter can be classified into two main groups: Pure Substances and Mixtures.
-
-Pure Substances have only one kind of chemical particle throughout.
-
-They have a fixed composition and definite properties such as melting point and density.
-
-Pure substances branch into:
-
-Elements – made of one kind of atom (e.g., Oxygen, Iron).
-
-Compounds – made of two or more elements chemically combined in a fixed ratio (e.g., Water, Salt).
-
-Mixtures contain two or more substances that are physically combined.
-
-Their composition can vary, and each component keeps its own properties.
-
-Mixtures branch into:
-
-Homogeneous mixtures – uniform throughout (e.g., air, salt water).
-
-Heterogeneous mixtures – not uniform; components are visible (e.g., salad, sand and water).",
+                "Matter can be classified into two main groups: Pure Substances and Mixtures.  Pure Substances have only one kind of chemical particle throughout.",
+                "They have a fixed composition and definite properties such as melting point and density.",
+                "Pure substances branch into:",
+                "Elements – made of one kind of atom (e.g., Oxygen, Iron).",
+                "Compounds – made of two or more elements chemically combined in a fixed ratio (e.g., Water, Salt).",
+                "Mixtures contain two or more substances that are physically combined.",
+                "Their composition can vary, and each component keeps its own properties.",
+                "Mixtures branch into:",
+                "Homogeneous mixtures – uniform throughout (e.g., air, salt water).",
+                "Heterogeneous mixtures – not uniform; components are visible (e.g., salad, sand and water).",
                 "<ul><li><b>Oxygen (O):</b> A gas that we need to breathe.</li><li><b>Iron (Fe):</b> A strong metal used to build cars and buildings.</li><li><b>Gold (Au):</b> A shiny and valuable metal used for jewelry.</li><li><b>Carbon (C):</b> The element that is the basis of all life on Earth.</li></ul>"
             ]
         },
