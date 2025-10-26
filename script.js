@@ -6,7 +6,7 @@ const lessonContent = {
             title: "What is Matter?",
             content: [
                 "Matter is anything that has mass and takes up space. Everything you can see and touch is made of matter. The air you breathe, the water you drink, and the chair you are sitting on are all examples of matter.",
-                "Matter is made up of tiny particles called atoms. 
+                "Matter is made up of tiny particles called atoms."
             ]
         },
         {
