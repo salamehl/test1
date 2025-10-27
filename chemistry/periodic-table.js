@@ -66,23 +66,36 @@ function nextQuestion() {
 
 function displayFinalResults() {
     const resultsContainer = document.getElementById('results-content');
-    resultsContainer.innerHTML = `<p>You scored ${score} out of ${quizQuestions.length}.</p>`;
+    resultsContainer.innerHTML = `<p>You have answered ${currentQuestionIndex} questions with a score of ${score}.</p>`;
+
     if (wrongTopics.size > 0) {
-        resultsContainer.innerHTML += "<p>Here are some more questions on the topics you found difficult. Keep practicing!</p>";
-        generateMoreQuestions(Array.from(wrongTopics));
-    } else {
+        const moreQuestionsGenerated = generateMoreQuestions(Array.from(wrongTopics));
+        if (moreQuestionsGenerated) {
+            resultsContainer.innerHTML += "<p>Here are some more questions on the topics you found difficult. Keep practicing!</p>";
+            return;
+        }
+    }
+
+    resultsContainer.innerHTML = `<p>Your final score is ${score} out of ${quizQuestions.length}.</p>`;
+    if (wrongTopics.size === 0) {
         resultsContainer.innerHTML += "<p>Great job! You have a good understanding of this unit.</p>";
+    } else {
+        resultsContainer.innerHTML += "<p>Keep practicing to improve your score.</p>";
     }
     document.getElementById('quiz-content').style.display = 'none';
 }
 
 function generateMoreQuestions(topics) {
     const newQuestions = allQuestions.filter(q => topics.includes(q.topic) && !quizQuestions.some(qq => qq.question === q.question));
+
     if (newQuestions.length > 0) {
-        quizQuestions.push(...newQuestions.slice(0, 2)); // Add up to 2 new questions
+        quizQuestions.push(...newQuestions.slice(0, Math.min(newQuestions.length, 2))); // Add up to 2 new questions
+        wrongTopics.clear();
         document.getElementById('quiz-content').style.display = 'block';
         displayQuestion();
+        return true;
     }
+    return false;
 }
 
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
