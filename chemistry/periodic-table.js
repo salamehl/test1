@@ -85,17 +85,6 @@ function generateMoreQuestions(topics) {
     }
 }
 
-const allQuestions = [
-    { question: "What does the atomic number of an element represent?", options: ["Number of neutrons", "Number of protons", "Number of electrons", "Number of protons and neutrons"], answer: "Number of protons", topic: "Basics" },
-    { question: "What are the vertical columns on the periodic table called?", options: ["Periods", "Groups", "Rows", "Series"], answer: "Groups", topic: "Organization" },
-    { question: "What is the chemical symbol for Gold?", options: ["Go", "Gd", "Au", "Ag"], answer: "Au", topic: "Symbols" },
-    { question: "Elements in the same group have similar...", options: ["Atomic masses", "Atomic numbers", "Chemical properties", "Number of protons"], answer: "Chemical properties", topic: "Organization" },
-    { question: "What are the horizontal rows on the periodic table called?", options: ["Groups", "Families", "Periods", "Columns"], answer: "Periods", topic: "Organization" },
-    { question: "The element with the symbol 'O' is...", options: ["Osmium", "Oxygen", "Gold", "Iron"], answer: "Oxygen", topic: "Symbols" },
-    { question: "Which of the following is a noble gas?", options: ["Oxygen", "Hydrogen", "Helium", "Nitrogen"], answer: "Helium", topic: "Groups" },
-    { question: "Who is credited with creating the first periodic table?", options: ["Isaac Newton", "Albert Einstein", "Dmitri Mendeleev", "Marie Curie"], answer: "Dmitri Mendeleev", topic: "History" }
-];
-
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
 document.getElementById('next-question').addEventListener('click', nextQuestion);
 
