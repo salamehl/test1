@@ -119,7 +119,7 @@ const quizQuestions = [
     {
         question: "Which of the following is a homogeneous mixture?",
         options: ["Sand and water", "Salt water", "Oil and water", "A bag of mixed nuts"],
-        answer: "Saltwater",
+        answer: "Salt water",
         topic: "Mixtures"
     },
     {
@@ -300,7 +300,7 @@ const allQuestions = [
     { question: "When two elements combine chemically to form a compound, the compound has...", options: ["The same properties as the elements", "Properties different from the elements", "Both elements visible", "A variable composition"], answer: "Properties different from the elements", topic: "Compounds" },
     { question: "The properties of a compound are...", options: ["the same as its constituent elements", "different from its constituent elements", "an average of its constituent elements", "always solid"], answer: "different from its constituent elements", topic: "Compounds" },
     { question: "What is the main difference between a compound and a mixture?", options: ["A compound has a fixed ratio of elements, a mixture does not.", "A compound can be separated by physical means, a mixture cannot.", "A mixture is a pure substance, a compound is not.", "There is no difference."], answer: "A compound has a fixed ratio of elements, a mixture does not.", topic: "Compounds" },
-    { question: "Which of the following is NOT a compound?", options: ["Carbon Dioxide (CO₂)", "Ammonia (NH₃)", "Saltwater", "Sugar (C₁₂H₂₂O₁₁)"], answer: "Saltwater", topic: "Compounds" },
+    { question: "Which of the following is NOT a compound?", options: ["Carbon Dioxide (CO₂)", "Ammonia (NH₃)", "Salt water", "Sugar (C₁₂H₂₂O₁₁)"], answer: "Salt water", topic: "Compounds" },
     { question: "The chemical formula H₂SO₄ represents...", options: ["A mixture of Hydrogen, Sulfur, and Oxygen", "An element", "A compound called Sulfuric Acid", "A homogeneous solution"], answer: "A compound called Sulfuric Acid", topic: "Compounds" },
     { question: "What does the '2' in H₂O represent?", options: ["There are two molecules of water.", "There are two atoms of Hydrogen.", "There are two atoms of Oxygen.", "There are two elements in water."], answer: "There are two atoms of Hydrogen.", topic: "Compounds" },
     { question: "Which of the following describes a property of a compound?", options: ["Its components are not chemically bonded.", "It can be separated by filtration.", "It has a definite melting and boiling point.", "Its composition can vary."], answer: "It has a definite melting and boiling point.", topic: "Compounds" },
@@ -310,7 +310,7 @@ const allQuestions = [
     { question: "All samples of a pure compound...", options: ["Have the same mass.", "Contain the same elements in the same ratio by mass.", "Are colorless.", "Can be separated by physical means."], answer: "Contain the same elements in the same ratio by mass.", topic: "Compounds" },
 
     // Mixtures
-    { question: "Which of the following is a homogeneous mixture?", options: ["Sand and water", "Saltwater", "Oil and water", "A bag of mixed nuts"], answer: "Saltwater", topic: "Mixtures" },
+    { question: "Which of the following is a homogeneous mixture?", options: ["Sand and water", "Salt water", "Oil and water", "A bag of mixed nuts"], answer: "Salt water", topic: "Mixtures" },
     { question: "A salad is an example of a...", options: ["Homogeneous mixture", "Heterogeneous mixture", "Compound", "Element"], answer: "Heterogeneous mixture", topic: "Mixtures" },
     { question: "Which of the following is not a pure substance?", options: ["Water", "Air", "Iron", "Carbon dioxide"], answer: "Air", topic: "Mixtures" },
     { question: "Which of the following is a mixture?", options: ["Salt (NaCl)", "Water (H₂O)", "Air", "Carbon dioxide (CO₂)"], answer: "Air", topic: "Mixtures" },
